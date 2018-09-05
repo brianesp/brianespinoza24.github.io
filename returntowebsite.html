@@ -1,12 +1,24 @@
 <html>
     <head>
          <meta http-equiv="refresh" content="3;url=index.html" />
+         <title>Returning to the Website...</title>
         <script type="text/javascript">
         window.history.forward();
         function noBack()
         {
             window.history.forward();
         }
+</script>
+<script type='text/javascript'> 
+title = "Returning to the Website ";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
 </script>
 <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
     </head>
