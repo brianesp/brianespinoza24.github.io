@@ -203,9 +203,18 @@ footer{
     margin-bottom:5px;
   }
 }
-(function titleScroller(text) {
-    document.title = text;
-    setTimeout(function () {
-        titleScroller(text.substr(1) + text.substr(0, 1));
-    }, 500);
-}(" Nature dff ssfd "));
+h1{
+text-shadow:
+-1px -1px 0 #ffffff,
+1px -1px 0 #ffffff,
+-1px 1px 0 #ffffff,
+1px 1px 0 #000;
+}
+
+p{
+text-shadow:
+-1px -1px 0 #ffffff,
+1px -1px 0 #ffffff,
+-1px 1px 0 #ffffff-,
+1px 1px 0 #ffffff;
+}
