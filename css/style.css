@@ -84,7 +84,7 @@ header a:hover{
   min-height:400px;
   background:url('../img/key.jpg') no-repeat 0 -400px;
   text-align:center;
-  color:#002663;
+  color:#0055ff;
 }
 
 #showcase h1{
@@ -166,7 +166,7 @@ footer{
   padding:20px;
   margin-top:20px;
   color:#005aaf;
-  background-color:#05af00;
+  background-color:#303133;
   text-align: center;
 }
 
@@ -215,6 +215,6 @@ p{
 text-shadow:
 -1px -1px 0 #ffffff,
 1px -1px 0 #ffffff,
--1px 1px 0 #ffffff-,
+-1px 1px 0 #ffffff,
 1px 1px 0 #ffffff;
 }
