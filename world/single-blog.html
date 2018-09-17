@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -115,12 +127,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="col-12 col-md-4">
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Gadgets</a></li>
-                            <li><a href="#">Video</a></li>
+                            
                         </ul>
                     </div>
                 </div>
