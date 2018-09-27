@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
+    
 
 <head></head>
-<script language="javascript">
-document.onmousedown=disableclick;
-status="Right Click Disabled";
-function disableclick(event)
-{
-  if(event.button==2)
-   {
-     alert(status);
-     return false;    
-   }
-}
-</script>
+
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +11,17 @@ function disableclick(event)
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Homepage</title>
+    <script type='text/javascript'> 
+title = "Your Title";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
+</script>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/logos2.jpg">
@@ -62,6 +62,7 @@ function disableclick(event)
                                         <a class="dropdown-item" href="catagory.html">Personal Portofolio</a>
                                         <a class="dropdown-item" href="https://mrthoe.github.io/intro.html">Class Website</a>
                                         <a class="dropdown-item" href="single-blog.html">Vlog Page</a>
+                                        <a class="dropdown-item" href="remixedprojects.html">Remixed Projects</a>
                                         
                                         
                                     </div>
@@ -88,7 +89,7 @@ function disableclick(event)
             <!-- Single Slide -->
             <div class="single-hero-slide bg-img background-overlay" style="background-image: url(img/blog-img/bg1.jpg);"></div>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(img/blog-img/bg2.jpg);"></div>
+            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(img/blog-img/bg4.png);"></div>
         </div>
 
         <!-- Hero Post Slide -->
@@ -103,7 +104,7 @@ function disableclick(event)
                                     <p>C</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="catagory.html">Make a Remix of a Game on Scratch and add a sprite and background to the remixed game.</a>
+                                    <a href="catagory.html">Make a game in Scratch from the Ground Up using your OWN code.</a>
                                 </div>
                             </div>
                             <!-- Single Slide -->
@@ -112,7 +113,7 @@ function disableclick(event)
                                     <p>WIP</p>
                                 </div>
                                 <div class="post-title">
-                                    <a href="catagory.html">Make a game in Scratch from the Ground Up using your OWN code.</a>
+                                    <a href="catagory.html">No Current WIP Projects</a>
                                 </div>
                                  
                             </div>
